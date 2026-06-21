@@ -119,10 +119,10 @@ section[id]{scroll-margin-top:90px}
 .hero__slides{position:absolute;inset:0}
 .hero__slide{
   position:absolute;inset:0;background-size:cover;background-position:center;
-  opacity:0;transition:opacity 1.6s ease;transform:scale(1.06);
+  opacity:0;transition:opacity 1.6s ease,transform 1.6s ease;transform:scale(1.12);
 }
-.hero__slide.is-active{opacity:1;animation:kenburns 8s ease-out forwards}
-@keyframes kenburns{from{transform:scale(1.06)}to{transform:scale(1.14)}}
+.hero__slide.is-active{opacity:1;animation:kenburns 4.6s ease-out forwards}
+@keyframes kenburns{from{transform:scale(1.06)}to{transform:scale(1.12)}}
 .hero__overlay{
   position:absolute;inset:0;
   background:linear-gradient(rgba(34,31,28,.65),rgba(34,31,28,.5),rgba(34,31,28,.8));
@@ -348,7 +348,8 @@ section[id]{scroll-margin-top:90px}
   .about__grid,.contact__grid{grid-template-columns:1fr}
   .about__media img,.contact__media img{height:420px}
   .about__badge{left:0}
-  .hero__labels{display:none}
+  .hero__labels,.hero__dots{display:none}
+  .symptoms{display:none}
   .services__grid,.why__cards,.why__metrics,.experience__grid,.plans,.packs__grid{grid-template-columns:1fr}
   .plan--featured{margin-top:0}
   .gallery{grid-template-columns:1fr;grid-auto-rows:240px}

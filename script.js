@@ -44,7 +44,7 @@
     if (manual) restart();
   }
   function next() { go(idx + 1); }
-  function restart() { clearInterval(timer); timer = setInterval(next, 5000); }
+  function restart() { clearInterval(timer); timer = setInterval(next, 3000); }
   restart();
 
   /* --- Reveal on scroll --- */
