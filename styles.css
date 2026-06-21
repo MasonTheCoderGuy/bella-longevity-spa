@@ -119,10 +119,11 @@ section[id]{scroll-margin-top:90px}
 .hero__slides{position:absolute;inset:0}
 .hero__slide{
   position:absolute;inset:0;background-size:cover;background-position:center;
-  opacity:0;transition:opacity 1.6s ease,transform 1.6s ease;transform:scale(1.12);
+  opacity:0;transition:opacity 1.6s ease;
+  animation:kenburns 32s ease-in-out infinite;
 }
-.hero__slide.is-active{opacity:1;animation:kenburns 4.6s ease-out forwards}
-@keyframes kenburns{from{transform:scale(1.06)}to{transform:scale(1.12)}}
+.hero__slide.is-active{opacity:1}
+@keyframes kenburns{0%{transform:scale(1)}50%{transform:scale(1.12)}100%{transform:scale(1)}}
 .hero__overlay{
   position:absolute;inset:0;
   background:linear-gradient(rgba(34,31,28,.65),rgba(34,31,28,.5),rgba(34,31,28,.8));
